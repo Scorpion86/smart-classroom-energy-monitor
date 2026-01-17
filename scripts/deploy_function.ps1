@@ -15,5 +15,5 @@ gcloud functions deploy $FunctionName `
   --runtime python310 `
   --trigger-topic $TopicName `
   --entry-point ingest_pubsub `
-  --set-env-vars BQ_DATASET=$Dataset,BQ_TABLE=$Table `
+  --set-env-vars "BQ_DATASET=$Dataset,BQ_TABLE=$Table" `
   --source functions/ingest
