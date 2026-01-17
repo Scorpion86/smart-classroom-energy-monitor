@@ -1,0 +1,11 @@
+{
+  "fields": [
+    {"name": "timestamp_utc", "type": "TIMESTAMP", "mode": "REQUIRED"},
+    {"name": "classroom_id", "type": "STRING", "mode": "REQUIRED"},
+    {"name": "temperature_c", "type": "FLOAT", "mode": "REQUIRED"},
+    {"name": "light_lux", "type": "FLOAT", "mode": "REQUIRED"},
+    {"name": "occupancy", "type": "INTEGER", "mode": "REQUIRED"},
+    {"name": "energy_estimate_w", "type": "FLOAT", "mode": "REQUIRED"},
+    {"name": "alert_flag", "type": "BOOLEAN", "mode": "REQUIRED"}
+  ]
+}
