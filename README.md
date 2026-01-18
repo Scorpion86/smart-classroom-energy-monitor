@@ -95,6 +95,14 @@ bq query --use_legacy_sql=false "SELECT * FROM `<PROJECT_ID>.iot_classroom.senso
 - If the BigQuery dataset already exists, the `bq mk` command will return an "already exists" message.
 - Simulator publishes every 5 seconds by default (configurable via `PUBLISH_INTERVAL_SEC`).
 
+## Clean Submission Checklist
+- Repo contains only used code and setup guides (no secrets, no local artifacts).
+- `.env` is excluded; only `.env.example` is included.
+- Cloud Function deploy script uses correct env var formatting.
+- BigQuery dataset/table exist in US region and are populated.
+- VM simulator publishes to `classroom-sensors` and BigQuery shows rows.
+- Looker Studio dashboard is created and screenshots are captured.
+
 ## Docs
 - `docs/architecture.md`: architecture details.
 - `docs/development_guide.md`: development steps.
