@@ -91,6 +91,9 @@ bq query --use_legacy_sql=false "SELECT * FROM `<PROJECT_ID>.iot_classroom.senso
 2. Add BigQuery as data source: `<PROJECT_ID>` -> `iot_classroom` -> `sensor_readings`.
 3. Build charts (KPI scorecards, time series, alerts table).
 
+   <img width="1619" height="918" alt="image" src="https://github.com/user-attachments/assets/856d4723-0db2-4a8f-aa9e-a299ea7258e4" />
+
+
 ## Notes
 - If the BigQuery dataset already exists, the `bq mk` command will return an "already exists" message.
 - Simulator publishes every 5 seconds by default (configurable via `PUBLISH_INTERVAL_SEC`).
